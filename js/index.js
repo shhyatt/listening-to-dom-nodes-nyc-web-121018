@@ -7,11 +7,11 @@
 
 let divs = document.querySelectorAll('div');
 
-function bubble(event) { 
-  console.log(this.firstChild.nodeValue.trim() + 'bubbled');
+function capture(event) { 
+  console.log(this.firstChild.nodeValue.trim() + 'captured');
 } 
 
 for (let i = 0; i < divs.length; i++) {
   
-  divs[i].addEventListener('click', bubble);
+  divs[i].addEventListener('click', capture, true);
 }
