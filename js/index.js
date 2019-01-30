@@ -7,7 +7,7 @@
 
 let divs = document.querySelectorAll('div');
 
-function capture(event) { 
+function bubble(event) { 
   console.log(this.firstChild.nodeValue.trim() + 'captured');
 } 
 
